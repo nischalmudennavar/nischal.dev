@@ -25,12 +25,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    title: 'Nischal Mudennavar',
+    title: 'Nischal Mudennavar ⚡️ ',
     description:
       'Nischal Mudennavar is technology generalist with a passion for generative ai, software development, frontend engineering, design, physics, anime, and astronomy.',
     url: 'https://nischal.dev',
     siteName: 'nischal.dev',
-    images: '../assets/skull2.gif',
+    images: {
+      url: 'https://github.com/nischalmudennavar/nischal.dev/blob/main/src/assets/skull2.gif', 
+      width: 800,
+      height: 800,
+    },
   },
 }
 
