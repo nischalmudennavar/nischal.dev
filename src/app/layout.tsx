@@ -20,11 +20,7 @@ export const metadata: Metadata = {
       'Nischal Mudennavar is technology generalist with a passion for generative ai, software development, frontend engineering, design, physics, anime, and astronomy.',
     url: 'https://nischal.dev',
     siteName: 'nischal.dev',
-    images: [
-      {
-        url:gif.src,
-      },
-    ],
+    images: "../assets/skull2.gif",
   },
 }
 
