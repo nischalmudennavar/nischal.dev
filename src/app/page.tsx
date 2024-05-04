@@ -52,12 +52,12 @@ export default function Home() {
       )}
     >
       <div className='main-content relative -top-10 text-center'>
-        <p className='text-4xl text-white opacity-80' ref={ref2} />
+        <p className='text-3xl text-white opacity-80 mb-2' ref={ref2} />
         <h1
           ref={ref}
           className={cn(
-            'text-[72px] ',
-            ' mb-3 text-violet-700 transition-all duration-300  ease-in-out '
+           
+            ' mb-5 text-violet-700 transition-all duration-300  ease-in-out text-5xl '
           )}
           onMouseOver={replay}
           // onMouseEnter={() => setIsHovered(true)}
@@ -66,7 +66,7 @@ export default function Home() {
           //   fontVariationSettings: isHovered ? "'wght' 700" : "'wght' 400",
           // }}
         />
-        <p className='text-xl text-white' ref={ref3}/>
+        <p className='text-md text-white' ref={ref3}/>
       </div>
     </main>
   )

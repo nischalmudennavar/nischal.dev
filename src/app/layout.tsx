@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     'Nischal Mudennavar is UX Engineer with a passion for software development, frontend engineering, design, physics, anime, and astronomy.',
   keywords:
     'Nischal Mudennavar, UX Engineer, software development, frontend engineering, design, physics, anime, astronomy, frontend developer, user experience, UI/UX design, web development, coding, programming, technology, software engineering, graphic design, animation, astrophysics, celestial bodies, Japanese animation, renaissance',
-  authors: [{ name: 'Nischal Mudennavar', url: 'https://nischal.dev' }],
+  authors: [{ name: 'Nischal Mudennavar' }],
   creator: 'Nischal Mudennavar',
   publisher: 'Nischal Mudennavar',
   robots: 'index, follow',
   viewport: 'width=device-width, initial-scale=1',
-  
+
 }
 
 export default function RootLayout({
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden w-screen box-border m-0 p-0">
       <body className={kode.className}>{children}</body>
     </html>
   );
