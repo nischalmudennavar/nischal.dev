@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Kode_Mono } from 'next/font/google'
 import './globals.css'
-import gif from '../assets/skull2.gif'
+
 
 const inter = Inter({ subsets: ['latin'] })
 const kode = Kode_Mono({ subsets: ['latin'] })
@@ -30,11 +30,16 @@ export const metadata: Metadata = {
       'Nischal Mudennavar is technology generalist with a passion for generative ai, software development, frontend engineering, design, physics, anime, and astronomy.',
     url: 'https://nischal.dev',
     siteName: 'nischal.dev',
+    
   },
   twitter: {
     title: 'Nischal Mudennavar ⚡️ ',
     card: 'summary_large_image',
+    site:'@nschalll',
+    creator:'@nschalll',
+
   },
+  
 }
 
 export default function RootLayout({
