@@ -8,9 +8,9 @@ const kode = Kode_Mono( { subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'nischal.dev',
   description:
-    'Nischal Mudennavar is UX Engineer with a passion for software development, frontend engineering, design, physics, anime, and astronomy.',
+    'Nischal Mudennavar is technology generalist with a passion for generative ai, software development, frontend engineering, design, physics, anime, and astronomy.',
   keywords:
-    'Nischal Mudennavar, UX Engineer, software development, frontend engineering, design, physics, anime, astronomy, frontend developer, user experience, UI/UX design, web development, coding, programming, technology, software engineering, graphic design, animation, astrophysics, celestial bodies, Japanese animation, renaissance',
+    'Nischal Mudennavar, UX Engineer, generative ai, software development, frontend engineering, design, physics, anime, astronomy, frontend developer, user experience, UI/UX design, web development, coding, programming, technology, software engineering, graphic design, animation, astrophysics, celestial bodies, Japanese animation, renaissance',
   authors: [{ name: 'Nischal Mudennavar' }],
   creator: 'Nischal Mudennavar',
   publisher: 'Nischal Mudennavar',
