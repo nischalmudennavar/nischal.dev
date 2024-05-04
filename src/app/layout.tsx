@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 const kode = Kode_Mono( { subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'nischal.dev',
+  title: 'Nischal Mudennavar',
   description:
     'Nischal Mudennavar is technology generalist with a passion for generative ai, software development, frontend engineering, design, physics, anime, and astronomy.',
   keywords:
