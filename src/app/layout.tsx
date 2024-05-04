@@ -7,12 +7,22 @@ const inter = Inter({ subsets: ["latin"] });
 const kode = Kode_Mono( { subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Nischal Mudennavar',
+  metadataBase: new URL('https://nischal.dev/'),
+  title: 'Nischal Mudennavar ⚡️ ',
   description:
     'Nischal Mudennavar is technology generalist with a passion for generative ai, software development, frontend engineering, design, physics, anime, and astronomy.',
   keywords:
     'Nischal Mudennavar, UX Engineer, generative ai, software development, frontend engineering, design, physics, anime, astronomy, frontend developer, user experience, UI/UX design, web development, coding, programming, technology, software engineering, graphic design, animation, astrophysics, celestial bodies, Japanese animation, renaissance',
-  robots: 'index, follow',
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: false,
+    },
+  },
   openGraph: {
     type: 'website',
     title: 'Nischal Mudennavar',
@@ -20,7 +30,7 @@ export const metadata: Metadata = {
       'Nischal Mudennavar is technology generalist with a passion for generative ai, software development, frontend engineering, design, physics, anime, and astronomy.',
     url: 'https://nischal.dev',
     siteName: 'nischal.dev',
-    images: "../assets/skull2.gif",
+    images: '../assets/skull2.gif',
   },
 }
 
