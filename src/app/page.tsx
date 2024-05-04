@@ -1,5 +1,4 @@
 'use client'
-import { useState, useEffect } from 'react'
 import { cn } from '@/lib/utils'
 import { useScramble } from 'use-scramble'
 import Image from 'next/image'
