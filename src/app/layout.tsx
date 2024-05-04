@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import { Inter,Kode_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next'
+import { Inter, Kode_Mono } from 'next/font/google'
+import './globals.css'
 import gif from '../assets/skull2.gif'
 
-const inter = Inter({ subsets: ["latin"] });
-const kode = Kode_Mono( { subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
+const kode = Kode_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nischal.dev/'),
@@ -30,22 +30,23 @@ export const metadata: Metadata = {
       'Nischal Mudennavar is technology generalist with a passion for generative ai, software development, frontend engineering, design, physics, anime, and astronomy.',
     url: 'https://nischal.dev',
     siteName: 'nischal.dev',
-    images: {
-      url: 'https://github.com/nischalmudennavar/nischal.dev/blob/main/src/assets/skull2.gif', 
-      width: 800,
-      height: 800,
-    },
+  },
+  twitter: {
+    title: 'Nischal Mudennavar ⚡️ ',
+    card: 'summary_large_image',
   },
 }
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang='en' className='m-0 box-border w-screen overflow-x-hidden p-0'>
-      <body className={`${kode.className} w-screen overflow-x-hidden min-h-screen `}>
+      <body
+        className={`${kode.className} min-h-screen w-screen overflow-x-hidden `}
+      >
         {children}
       </body>
     </html>
