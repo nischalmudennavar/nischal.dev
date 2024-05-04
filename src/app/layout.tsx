@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   creator: 'Nischal Mudennavar',
   publisher: 'Nischal Mudennavar',
   robots: 'index, follow',
-  viewport: 'width=device-width, initial-scale=1',
+ 
 
 }
 
