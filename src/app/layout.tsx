@@ -5,7 +5,7 @@ import './globals.css'
 const kode = Kode_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nischal.dev/'),
+  metadataBase: new URL('https://www.nischal.dev/'),
   title: 'Nischal Mudennavar ⚡️ ',
   description:
     'Nischal Mudennavar is technology generalist with a passion for generative ai, software development, frontend engineering, design, physics, anime, and astronomy.',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: 'Nischal Mudennavar ⚡️ ',
     description:
       'Nischal Mudennavar is technology generalist with a passion for generative ai, software development, frontend engineering, design, physics, anime, and astronomy.',
-    url: 'https://nischal.dev',
+    url: 'https://www.nischal.dev',
     siteName: 'nischal.dev',
   },
   twitter: {
