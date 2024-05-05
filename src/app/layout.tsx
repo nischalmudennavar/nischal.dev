@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       noimageindex: false,
     },
   },
+  alternates: {
+    canonical: './',
+  },
   openGraph: {
     type: 'website',
     title: 'Nischal Mudennavar ⚡️ ',
