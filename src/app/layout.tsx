@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-import { Inter, Kode_Mono } from 'next/font/google'
+import { Kode_Mono } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
 const kode = Kode_Mono({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
