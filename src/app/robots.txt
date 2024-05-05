@@ -6,5 +6,6 @@ Disallow: /accounts
 # Allow all crawlers
 User-agent: *
 Allow: /
+
 Sitemap: https://www.nischal.dev/sitemap.xml
 Sitemap: https://nischal.dev/sitemap.xml
