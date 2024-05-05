@@ -55,6 +55,8 @@ export default function Home() {
           width={125}
           height={125}
           className='relative mr-5 '
+          
+          priority={true}
         />
         <div className=' flex h-full flex-col justify-center p-2 lg:items-start sm:items-center  w-fit '>
           <p className=' mb-3 text-xl text-white opacity-75' ref={ref2} />
