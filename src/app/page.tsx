@@ -17,9 +17,9 @@ export default function Home() {
     const elapsedMilliseconds = currentDate.getTime() - startDate.getTime()
 
     const millisecondsInADay = 1000 * 60 * 60 * 24
-    const daysElapsed = Math.floor(elapsedMilliseconds / millisecondsInADay)
+    const daysElapsed:Number = Math.floor(elapsedMilliseconds / millisecondsInADay)
 
-    setElapsedTime(daysElapsed)
+    setElapsedTime(daysElapsed.toString())
   }, [])
 
   const { ref, replay } = useScramble({
