@@ -20,7 +20,7 @@ export default function Home() {
   const { ref: ref2 } = useScramble({
     text: 'welcome to',
     range: [65, 125],
-    speed: 0.4,
+    speed: 1,
     tick: 2,
     step: 5,
     scramble: 21,
@@ -32,7 +32,7 @@ export default function Home() {
   const { ref: ref3 } = useScramble({
     text: 'Crafting a digital masterpiece,\n one line at a time...',
     range: [65, 125],
-    speed: 0.3,
+    speed: 1.5,
     tick: 2,
     step: 5,
     scramble: 21,
