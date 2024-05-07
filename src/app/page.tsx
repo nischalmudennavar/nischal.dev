@@ -3,7 +3,6 @@ import { cn } from '@/lib/utils'
 import { useScramble } from 'use-scramble'
 import Image from 'next/image'
 import gif from '@/assets/skull2.gif'
-import { Slash } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
@@ -17,7 +16,9 @@ export default function Home() {
     const elapsedMilliseconds = currentDate.getTime() - startDate.getTime()
 
     const millisecondsInADay = 1000 * 60 * 60 * 24
-    const daysElapsed:Number = Math.floor(elapsedMilliseconds / millisecondsInADay)
+    const daysElapsed: Number = Math.floor(
+      elapsedMilliseconds / millisecondsInADay
+    )
 
     setElapsedTime(daysElapsed.toString())
   }, [])
