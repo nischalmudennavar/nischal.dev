@@ -46,10 +46,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' className='m-0 box-border w-screen overflow-x-hidden p-0'>
+    <html lang='en' className='overflow-x-hidden'>
       <body
         className={`${kode.className} min-h-screen w-screen overflow-x-hidden `}
       >
+        
         {children}
       </body>
     </html>
