@@ -5,6 +5,7 @@ import Image from 'next/image'
 import gif from '@/assets/skull2.gif'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import GridContainer from '@/components/GridContainer'
 
 export default function Home() {
   const [elapsedTime, setElapsedTime] = useState('')
@@ -61,12 +62,12 @@ export default function Home() {
   })
 
   return (
-    <main
-      className={cn(
-        'flex h-screen flex-col items-center justify-center bg-black  '
-      )}
+    <GridContainer
+      className={
+        '  bg-black place-items-center '
+      }
     >
-      <div className='  main-content relative -top-10 flex h-fit flex-col items-center justify-between gap-1 p-2 text-center sm:w-full sm:flex-wrap sm:text-center lg:w-fit lg:flex-row lg:gap-0 lg:text-left'>
+      <div className='  flex-content  col-span-12  items-center flex h-fit flex-col  justify-center gap-1 p-2 text-center sm:w-full sm:flex-wrap sm:text-center xl:w-fit xl:flex-row xl:gap-0 xl:text-left '>
         <Image
           src={gif}
           alt='gif'
@@ -74,6 +75,7 @@ export default function Home() {
           height={155}
           className='relative mr-5 '
           priority={true}
+          unoptimized
         />
         <div className=' flex h-full w-fit flex-col justify-center p-2 sm:items-center  lg:items-start '>
           <p className=' mb-3 text-xl text-white opacity-75' ref={ref2} />
@@ -106,6 +108,6 @@ export default function Home() {
 
         <p className='text-white'>Since I started working on this site 🛠️</p>
       </div>
-    </main>
+    </GridContainer>
   )
 }

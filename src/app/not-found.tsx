@@ -13,6 +13,8 @@ export default function NotFound() {
           className='selection:none pointer-events-none select-none'
           alt='404'
           height={120}
+          unoptimized
+          priority
         />
         <h2 className='text-white'>
           Page not found in{' '}
