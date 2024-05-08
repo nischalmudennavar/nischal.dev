@@ -6,7 +6,7 @@ import gif from '@/assets/skull2.gif'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import GridContainer from '@/components/GridContainer'
-import CurrentlyPlayingOnSpotify from '@/components/CurrentlyPlayingOnSpotify'
+import SpotifyWidget from '@/components/SpotifyWidget/spotify-widget'
 
 export default function Home() {
   const [elapsedTime, setElapsedTime] = useState('')
@@ -95,7 +95,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <CurrentlyPlayingOnSpotify />
+
+        <SpotifyWidget />
       </div>
 
       <div className=' text-md absolute bottom-10 flex w-[80%] flex-col  gap-2  text-wrap text-center font-bold text-white opacity-75 duration-500 '>
