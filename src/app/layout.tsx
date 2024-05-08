@@ -47,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className='m-0 box-border overflow-x-hidden p-0'>
-      <body className={`${kode.className} min-h-screen bg-black overflow-x-hidden grid place-items-center `}>
+      <body className={`${kode.className} min-h-fit bg-black overflow-x-hidden grid place-items-center `}>
         {children}
       </body>
     </html>

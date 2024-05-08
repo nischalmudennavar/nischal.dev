@@ -67,7 +67,7 @@ export default function Home() {
         '  bg-black place-items-center '
       }
     >
-      <div className='  flex-content  col-span-12  items-center flex h-fit flex-col  justify-center gap-1 p-2 text-center sm:w-full sm:flex-wrap sm:text-center xl:w-fit xl:flex-row xl:gap-0 xl:text-left '>
+      <div className='  flex-content -top-20 relative  col-span-12  items-center flex h-fit flex-col  justify-center gap-1 p-2 text-center sm:w-full sm:flex-wrap  sm:text-center  xl:w-fit xl:flex-row xl:gap-0 xl:text-left '>
         <Image
           src={gif}
           alt='gif'
@@ -77,7 +77,7 @@ export default function Home() {
           priority={true}
           unoptimized
         />
-        <div className=' flex h-full w-fit flex-col justify-center p-2 sm:items-center  lg:items-start '>
+        <div className=' flex h-full w-fit flex-col justify-center p-2 sm:items-center  xl:items-start '>
           <p className=' mb-3 text-xl text-white opacity-75' ref={ref2} />
           <Link href='https://www.linkedin.com/in/nischal-mudennavar/'>
             <h1
