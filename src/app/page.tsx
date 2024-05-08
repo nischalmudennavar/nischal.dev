@@ -6,6 +6,7 @@ import gif from '@/assets/skull2.gif'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import GridContainer from '@/components/GridContainer'
+import CurrentlyPlayingOnSpotify from '@/components/CurrentlyPlayingOnSpotify'
 
 export default function Home() {
   const [elapsedTime, setElapsedTime] = useState('')
@@ -62,12 +63,8 @@ export default function Home() {
   })
 
   return (
-    <GridContainer
-      className={
-        '  bg-black place-items-center '
-      }
-    >
-      <div className='  flex-content -top-20 relative  col-span-12  items-center flex h-fit flex-col  justify-center gap-1 p-2 text-center sm:w-full sm:flex-wrap  sm:text-center  xl:w-fit xl:flex-row xl:gap-0 xl:text-left '>
+    <GridContainer className={'  place-items-center bg-black '}>
+      <div className='  flex-content relative -top-20  col-span-12  flex h-fit flex-col items-center  justify-center gap-1 p-2 text-center sm:w-full sm:flex-wrap  sm:text-center  xl:w-fit xl:flex-row xl:gap-0 xl:text-left '>
         <Image
           src={gif}
           alt='gif'
@@ -98,7 +95,9 @@ export default function Home() {
             </p>
           </div>
         </div>
+        <CurrentlyPlayingOnSpotify />
       </div>
+
       <div className=' text-md absolute bottom-10 flex w-[80%] flex-col  gap-2  text-wrap text-center font-bold text-white opacity-75 duration-500 '>
         <span className='text-2xl text-yellow-400'>
           {' '}
