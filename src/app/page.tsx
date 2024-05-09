@@ -91,7 +91,7 @@ export default function Home() {
               }
             />
           </Link>
-          <Authbutton  />
+          {/* <Authbutton  /> */}
           <div className='flex'>
             {' '}
             <p
