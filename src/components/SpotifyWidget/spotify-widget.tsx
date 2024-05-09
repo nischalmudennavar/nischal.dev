@@ -1,4 +1,5 @@
 import { getNowPlaying } from '@/app/lib/getNowPlayingFromSpotify'
+import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
 type Data = {
@@ -12,7 +13,7 @@ type Data = {
   artistUrl: string
 }
 
-const SpotifyWidget:React.FC = () => {
+const SpotifyWidget: React.FC = () => {
   const [songData, setSongData] = useState<Data>()
   useEffect(() => {
     const fetchNowPlaying = async () => {
@@ -23,8 +24,17 @@ const SpotifyWidget:React.FC = () => {
   }, [])
 
   return (
-    <div className='h-8 w-24 border border-white text-white p-2 absolute right-0'>
-      {songData?.title}
+    <div className='absolute right-0 top-10 w-72 border border-white p-2 text-white rounded-md'>
+      {/* // eslint-disable-next-line jsx-a11y/alt-text */}
+      {songData ? (
+        <Image
+          src={songData?.albumImageUrl.toString()}
+          width={75}
+          height={75}
+          alt='preview'
+          className="rounded-sm"
+        />
+      ) : "Nischal isnt listening to any songs rn"}
     </div>
   ) // Render token or whatever you like
 }
