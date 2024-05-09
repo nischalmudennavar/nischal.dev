@@ -2,21 +2,24 @@ import type { Metadata } from 'next'
 import { Kode_Mono } from 'next/font/google'
 import { ThemeProvider } from '@/context/theme-provider'
 import { seo } from '@/data/seo'
+import { BASE_PATH, auth } from '@/auth'
 
 import './globals.css'
-import SpotifyWidget from '@/components/SpotifyWidget'
+
+import SessionProvider from '@/components/SessionProvider'
 
 const kode = Kode_Mono({ subsets: ['latin'] })
-
 
 // @/data/seo
 export const metadata: Metadata = seo
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const session = await auth()
+
   return (
     <html
       lang='en'
@@ -24,16 +27,21 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className={`${kode.className} min-h-fit overflow-x-hidden  `}>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='dark'
-          enableSystem
-          disableTransitionOnChange
-        >
-          {/* <SpotifyWidget showWidget /> */}
-          {children}
-        </ThemeProvider>
+        <SessionProvider session={session} basePath={BASE_PATH}>
+          <ThemeProvider
+            attribute='class'
+            defaultTheme='dark'
+            enableSystem
+            disableTransitionOnChange
+          >
+            {/* <SpotifyWidget showWidget /> */}
+            {children}
+          </ThemeProvider>
+        </SessionProvider>
       </body>
     </html>
   )
+}
+function getServerSession() {
+  throw new Error('Function not implemented.')
 }

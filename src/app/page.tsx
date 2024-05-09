@@ -8,9 +8,13 @@ import Link from 'next/link'
 import GridContainer from '@/components/ui/GridContainer'
 import SpotifyWidget from '@/components/SpotifyWidget/spotify-widget'
 import DarkModeToggle from '@/components/DarkModeToggle'
+import { useSession } from 'next-auth/react'
+import signOut from 'next-auth'
+import Authbutton from '@/components/Authbutton'
 
 export default function Home() {
   const [elapsedTime, setElapsedTime] = useState('')
+  const session = useSession()
 
   useEffect(() => {
     const startDate: Date = new Date('2024-05-04')
@@ -66,6 +70,8 @@ export default function Home() {
   return (
     <GridContainer className={'  relative place-items-center  '}>
       <div className='  flex-content relative -top-20  col-span-12  flex h-fit flex-col items-center  justify-center gap-1 p-2 text-center sm:w-full sm:flex-wrap  sm:text-center  xl:w-fit xl:flex-row xl:gap-0 xl:text-left '>
+        <h1>{JSON.stringify(session, null, 2)}</h1>
+
         <Image
           src={gif}
           alt='gif'
@@ -85,6 +91,7 @@ export default function Home() {
               }
             />
           </Link>
+          <Authbutton />
           <div className='flex'>
             {' '}
             <p
@@ -97,10 +104,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-     
       <DarkModeToggle />
-
       <div className=' text-md absolute bottom-10 flex w-[80%] flex-col  gap-2  text-wrap text-center font-bold text-white opacity-75 duration-500 '>
         <span className='text-2xl text-yellow-400'>
           {' '}
