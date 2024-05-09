@@ -12,7 +12,7 @@ type Data = {
   artistUrl: string
 }
 
-const SpotifyWidget = () => {
+const SpotifyWidget:React.FC = () => {
   const [songData, setSongData] = useState<Data>()
   useEffect(() => {
     const fetchNowPlaying = async () => {
@@ -23,7 +23,7 @@ const SpotifyWidget = () => {
   }, [])
 
   return (
-    <div className='h-8 w-24 border border-white text-white'>
+    <div className='h-8 w-24 border border-white text-white p-2 absolute right-0'>
       {songData?.title}
     </div>
   ) // Render token or whatever you like

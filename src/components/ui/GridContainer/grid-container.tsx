@@ -7,7 +7,7 @@ type GridContainerProps = React.HTMLAttributes<HTMLDivElement> & {
 
 const GridContainer = ({ children, className, ...rest }: GridContainerProps) => {
   return (
-    <main className={` mx-6 grid min-h-screen grid-cols-12 gap-6  ${className}`} {...rest}>
+    <main className={` mx-12 grid min-h-screen grid-cols-12 gap-6  ${className}`} {...rest}>
       {children}
     </main>
   )

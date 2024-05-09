@@ -5,7 +5,7 @@ import Image from 'next/image'
 import gif from '@/assets/skull2.gif'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import GridContainer from '@/components/GridContainer'
+import GridContainer from '@/components/ui/GridContainer'
 import SpotifyWidget from '@/components/SpotifyWidget/spotify-widget'
 
 export default function Home() {
@@ -63,7 +63,7 @@ export default function Home() {
   })
 
   return (
-    <GridContainer className={'  place-items-center bg-black '}>
+    <GridContainer className={'  place-items-center bg-black relative '}>
       <div className='  flex-content relative -top-20  col-span-12  flex h-fit flex-col items-center  justify-center gap-1 p-2 text-center sm:w-full sm:flex-wrap  sm:text-center  xl:w-fit xl:flex-row xl:gap-0 xl:text-left '>
         <Image
           src={gif}
@@ -95,9 +95,9 @@ export default function Home() {
             </p>
           </div>
         </div>
-
-        <SpotifyWidget />
       </div>
+
+      <SpotifyWidget />
 
       <div className=' text-md absolute bottom-10 flex w-[80%] flex-col  gap-2  text-wrap text-center font-bold text-white opacity-75 duration-500 '>
         <span className='text-2xl text-yellow-400'>
