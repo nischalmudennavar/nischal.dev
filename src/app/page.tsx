@@ -70,7 +70,7 @@ export default function Home() {
   return (
     <GridContainer className={'  relative place-items-center  '}>
       <div className='  flex-content relative -top-20  col-span-12  flex h-fit flex-col items-center  justify-center gap-1 p-2 text-center sm:w-full sm:flex-wrap  sm:text-center  xl:w-fit xl:flex-row xl:gap-0 xl:text-left '>
-        <h1>{JSON.stringify(session, null, 2)}</h1>
+       
 
         <Image
           src={gif}
@@ -91,7 +91,7 @@ export default function Home() {
               }
             />
           </Link>
-          <Authbutton />
+          <Authbutton  />
           <div className='flex'>
             {' '}
             <p
