@@ -34,4 +34,7 @@ export const seo: Metadata = {
     site: '@nschalll',
     creator: '@nschalll',
   },
+  icons: {
+    
+  }
 }
