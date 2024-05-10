@@ -11,6 +11,7 @@ import { useSession } from 'next-auth/react'
 
 export default function Page() {
   const [elapsedTime, setElapsedTime] = useState('')
+
   const session = useSession()
 
   useEffect(() => {
