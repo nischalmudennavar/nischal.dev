@@ -26,9 +26,7 @@ export default async function RootLayout({
       className='m-0 box-border overflow-x-hidden p-0'
       suppressHydrationWarning
     >
-      <head>
-        <link rel='icon' href='./icon.png' ></link>
-      </head>
+     
       <body className={`${kode.className} min-h-fit overflow-x-hidden  `}>
         <SessionProvider session={session} basePath={BASE_PATH}>
           <ThemeProvider

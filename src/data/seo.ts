@@ -35,6 +35,9 @@ export const seo: Metadata = {
     creator: '@nschalll',
   },
   icons: {
-    
-  }
+    icon: ['/favicon.ico?v=1'],
+    apple: ['./apple-touch-icon.png?v=4'],
+    shortcut: ['./apple-touch-icon.png?v=4'],
+  },
+  manifest: './site.webmanifest',
 }
