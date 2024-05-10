@@ -1,7 +1,6 @@
-
 import { useScramble } from 'use-scramble'
 import Image from 'next/image'
-import gif from '@/assets/skull2.gif'
+import gif from '@/assets/gifs/giphy.gif'
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
@@ -51,7 +50,7 @@ const HeroSection = () => {
     overflow: false,
   })
   const { ref: ref3 } = useScramble({
-    text: 'Building one-of-a-kind creative portfolio... ',
+    text: 'Still working on my portfolio :)  ',
     range: [65, 125],
     speed: 1.5,
     tick: 2,
@@ -65,38 +64,35 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className='  flex-content relative -top-20  col-span-12  flex h-fit flex-col items-center  justify-center gap-1 p-2 text-center sm:w-full sm:flex-wrap  sm:text-center  xl:w-fit xl:flex-row xl:gap-0 xl:text-left '>
-        <Image
-          src={gif}
-          alt='gif'
-          width={155}
-          height={155}
-          className='relative mr-5 '
-          priority={true}
-          unoptimized
-        />
-        <div className=' flex h-full w-fit flex-col justify-center p-2 sm:items-center  xl:items-start '>
-          <p className=' mb-3 text-xl  opacity-75' ref={ref2} />
+      <div className=' col-span-12   flex  h-fit select-none  flex-col items-center justify-center   p-2 text-center selection:select-none sm:w-full sm:flex-wrap  sm:text-center  xl:w-fit xl:flex-col xl:gap-0 xl:text-left '>
+        <div className=' flex h-full w-fit flex-col justify-center p-2 sm:items-center  xl:items-center '>
+          <p className='  text-xl  opacity-75' ref={ref2} />
           <Link href='https://www.linkedin.com/in/nischal-mudennavar/'>
             <h1
               ref={ref}
               className={
-                ' mb-5 text-5xl text-yellow-400 transition-all  duration-300 ease-in-out '
+                ' text-[46px] text-yellow-400 transition-all duration-300 ease-in-out  hover:font-bold hover:tracking-widest md:text-[76px] xl:text-[96px] '
               }
             />
           </Link>
           {/* <Authbutton  /> */}
-          <div className='flex'>
+          <div className='flex flex-col items-center justify-between '>
             {' '}
             <p className='text-wrap text-sm  opacity-75 ' ref={ref3} />
-            <p className='animate-pulse text-wrap text-sm font-bold   opacity-75 duration-500  '>
-              |{' '}
-            </p>
+            <Image
+              src={gif}
+              alt='gif'
+              width={65}
+              height={65}
+              className=' pointer-events-none ml-5   mt-6 select-none rounded-full  '
+              priority={true}
+              unoptimized
+            />
           </div>
         </div>
       </div>
       <DarkModeToggle />
-      <div className=' text-md absolute bottom-10 flex w-[80%] flex-col  gap-2  text-wrap text-center font-bold  opacity-75 duration-500 '>
+      <div className=' text-md absolute bottom-10 flex w-[80%] flex-col  gap-2  text-wrap text-center font-bold   duration-500 '>
         <span className='text-2xl text-yellow-400'>
           {' '}
           {elapsedTime} Days
