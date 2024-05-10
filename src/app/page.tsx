@@ -70,8 +70,6 @@ export default function Home() {
   return (
     <GridContainer className={'  relative place-items-center  '}>
       <div className='  flex-content relative -top-20  col-span-12  flex h-fit flex-col items-center  justify-center gap-1 p-2 text-center sm:w-full sm:flex-wrap  sm:text-center  xl:w-fit xl:flex-row xl:gap-0 xl:text-left '>
-       
-
         <Image
           src={gif}
           alt='gif'
@@ -87,7 +85,7 @@ export default function Home() {
             <h1
               ref={ref}
               className={
-                ' mb-5 text-5xl text-violet-700 transition-all  duration-300 ease-in-out '
+                ' mb-5 text-5xl text-yellow-400 transition-all  duration-300 ease-in-out '
               }
             />
           </Link>

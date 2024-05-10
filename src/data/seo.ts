@@ -24,7 +24,7 @@ export const seo: Metadata = {
     type: 'website',
     title: 'Nischal Mudennavar ⚡️ ',
     description:
-      'Nischal Mudennavar is technology generalist with a passion for generative ai, software development, frontend engineering, design, physics, anime, and astronomy.',
+      'Nischal Mudennavar is technology generalist with a passion for software development, Generative AI,, frontend engineering, visual design, physics, anime, pyschology and astronomy.',
     url: 'https://www.nischal.dev',
     siteName: 'nischal.dev',
   },
