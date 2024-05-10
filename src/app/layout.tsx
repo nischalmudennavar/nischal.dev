@@ -31,7 +31,7 @@ export default async function RootLayout({
         <SessionProvider session={session} basePath={BASE_PATH}>
           <ThemeProvider
             attribute='class'
-            defaultTheme='dark'
+            defaultTheme='system'
             enableSystem
             disableTransitionOnChange
           >

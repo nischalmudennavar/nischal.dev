@@ -28,8 +28,8 @@ const HeroSection = () => {
   const { ref, replay } = useScramble({
     text: 'nischal.dev',
     speed: 1,
-    tick: 2,
-    step: 5,
+    tick: 3,
+    step: 10,
     scramble: 21,
     seed: 2,
     chance: 0.89,
@@ -64,16 +64,16 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className=' col-span-12   flex  h-fit select-none  flex-col items-center justify-center   p-2 text-center selection:select-none sm:w-full sm:flex-wrap  sm:text-center  xl:w-fit xl:flex-col xl:gap-0 xl:text-left '>
+      <div className=' relative -top-10 col-span-12   flex  h-fit select-none  flex-col items-center justify-center   p-2 text-center selection:select-none sm:w-full sm:flex-wrap  sm:text-center  xl:w-fit xl:flex-col xl:gap-0 xl:text-left '>
         <div className=' flex h-full w-fit flex-col justify-center p-2 sm:items-center  xl:items-center '>
           <p className='  text-xl  opacity-75' ref={ref2} />
-          <Link href='https://www.linkedin.com/in/nischal-mudennavar/'>
-            <h1
-              ref={ref}
-              className={
-                ' text-[46px] text-yellow-400 transition-all duration-300 ease-in-out  hover:font-bold hover:tracking-widest md:text-[76px] xl:text-[96px] '
-              }
-            />
+          <Link
+            href='https://www.linkedin.com/in/nischal-mudennavar/'
+            
+            className=' flex items-center justify-center text-[46px] text-yellow-400 transition-all duration-500 ease-in-out  hover:font-bold hover:tracking-widest md:text-[76px] xl:text-[96px]'
+          >
+            <h1 ref={ref} className={' '} />
+            <span className=" animate-pulse-slow ">_</span>
           </Link>
           {/* <Authbutton  /> */}
           <div className='flex flex-col items-center justify-between '>
@@ -82,9 +82,9 @@ const HeroSection = () => {
             <Image
               src={gif}
               alt='gif'
-              width={65}
-              height={65}
-              className=' pointer-events-none ml-5   mt-6 select-none rounded-full  '
+              width={105}
+              height={105}
+              className='   mt-6 select-none rounded-full '
               priority={true}
               unoptimized
             />
