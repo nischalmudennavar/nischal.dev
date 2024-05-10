@@ -1,6 +1,9 @@
 import { Metadata } from 'next/types'
 
 export const seo: Metadata = {
+  icons: {
+    icon:'../app/favicon.ico'
+  },
   metadataBase: new URL('https://www.nischal.dev/'),
   title: 'Nischal Mudennavar ⚡️ ',
   description:
