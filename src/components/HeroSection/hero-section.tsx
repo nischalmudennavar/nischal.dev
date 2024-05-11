@@ -77,7 +77,7 @@ const HeroSection = () => {
           {/* <Authbutton  /> */}
           <div className='flex flex-col items-center justify-between '>
             {' '}
-            <p className='text-wrap text-sm  opacity-75 ' ref={ref3} />
+            <p className='text-wrap text-sm  opacity-75  ' ref={ref3} />
             <Image
               src={gif}
               alt='gif'
