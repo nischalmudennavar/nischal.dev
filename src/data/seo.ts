@@ -6,7 +6,7 @@ export const seo: Metadata = {
   description:
     'Nischal Mudennavar is technology generalist with a passion for software development, Generative AI , frontend engineering, design, physics, anime, and astronomy.',
   keywords:
-    'Nischal Mudennavar, Design Technologist, UX Engineer, generative ai, software development, frontend engineering, design, physics, anime, astronomy, frontend developer, user experience, UI/UX design, web development, coding, programming, technology, software engineering, graphic design, animation, astrophysics, celestial bodies, Japanese animation, renaissance',
+    'Nischal Mudennavar, www, nischal, nischal.dev, Nischal, , Design Technologist, UX Engineer, generative ai, software development, frontend engineering, design, physics, anime, astronomy, frontend developer, user experience, UI/UX design, web development, coding, programming, technology, software engineering, graphic design, animation, astrophysics, celestial bodies, Japanese animation, renaissance',
   robots: {
     index: true,
     follow: true,
@@ -35,27 +35,9 @@ export const seo: Metadata = {
     creator: '@nschalll',
   },
   icons: {
+    icon: ['/favicon.ico'],
     apple: ['./apple-touch-icon.png'],
     shortcut: ['./apple-touch-icon.png'],
-    icon: [
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '32x32',
-        url: '/favicon-32x32.png',
-      },
-      {
-        rel: 'icon',
-        type: 'image/png',
-        sizes: '16x16',
-        url: '/favicon-16x16.png',
-      },
-      {
-        rel: 'icon',
-        type: 'image/ico',
-        url: '/favicon.ico',
-      },
-    ],
   },
   manifest: './site.webmanifest',
 }
