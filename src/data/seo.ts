@@ -34,5 +34,5 @@ export const seo: Metadata = {
     site: '@nschalll',
     creator: '@nschalll',
   },
-  manifest: './site.webmanifest',
+ 
 }
