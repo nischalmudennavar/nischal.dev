@@ -2,7 +2,7 @@ import { Metadata } from 'next/types'
 
 export const seo: Metadata = {
   metadataBase: new URL('https://www.nischal.dev/'),
-  title: 'Nischal Mudennavar ⚡️ ',
+  title: 'Nischal Mudennavar',
   description:
     'Nischal Mudennavar is technology generalist with a passion for software development, Generative AI , frontend engineering, design, physics, anime, and astronomy.',
   keywords:
@@ -22,14 +22,14 @@ export const seo: Metadata = {
   },
   openGraph: {
     type: 'website',
-    title: 'Nischal Mudennavar ⚡️ ',
+    title: 'Nischal Mudennavar',
     description:
       'Nischal Mudennavar is technology generalist with a passion for software development, Generative AI,, frontend engineering, visual design, physics, anime, pyschology and astronomy.',
     url: 'https://www.nischal.dev',
     siteName: 'nischal.dev',
   },
   twitter: {
-    title: 'Nischal Mudennavar ⚡️ ',
+    title: 'Nischal Mudennavar',
     card: 'summary_large_image',
     site: '@nschalll',
     creator: '@nschalll',

@@ -75,8 +75,8 @@ const SpotifyWidget: React.FC<Props> = (props) => {
           ) : (
             <Image
               src={spotifyLogo}
-              width={75}
-              height={75}
+              width={45}
+              height={45}
               alt='preview'
               className='grayscale-100  rounded filter transition duration-1000 animate-in'
             />
