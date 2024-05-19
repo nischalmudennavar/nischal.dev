@@ -18,7 +18,7 @@ export const seo: Metadata = {
     },
   },
   alternates: {
-    canonical: './',
+    canonical: 'https://www.nischal.dev/',
   },
   openGraph: {
     type: 'website',
@@ -33,11 +33,6 @@ export const seo: Metadata = {
     card: 'summary_large_image',
     site: '@nschalll',
     creator: '@nschalll',
-  },
-  icons: {
-    icon: ['/favicon.ico?v=4'],
-    apple: ['./apple-touch-icon.png?v=4'],
-    shortcut: ['./apple-touch-icon.png?v=4'],
   },
   manifest: './site.webmanifest',
 }
