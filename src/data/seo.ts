@@ -38,6 +38,7 @@ export const seo: Metadata = {
     icon: ['/favicon.ico'],
     apple: ['./apple-touch-icon.png'],
     shortcut: ['./apple-touch-icon.png'],
+    
   },
   manifest: './site.webmanifest',
 }
