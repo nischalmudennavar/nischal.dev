@@ -8,7 +8,7 @@ import DarkModeToggle from '@/components/DarkModeToggle'
 import { useSession } from 'next-auth/react'
 
 const HeroSection = () => {
-  const [elapsedTime, setElapsedTime] = useState('')
+  const [elapsedTime, setElapsedTime] = useState('') 
   const session = useSession()
 
   useEffect(() => {

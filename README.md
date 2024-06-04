@@ -15,4 +15,3 @@ needed tech stack ->
 - Authentication (Next Auth js )
 
 
-

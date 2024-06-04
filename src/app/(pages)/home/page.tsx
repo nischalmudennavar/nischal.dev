@@ -11,6 +11,7 @@ export default function Home() {
     <GridContainer className={'relative place-items-center '}>
       <h1>Home</h1>
       {/* <SpotifyWidget showWidget /> */}
+     
     </GridContainer>
   )
 }

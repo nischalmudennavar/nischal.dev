@@ -3,7 +3,14 @@ import Credentials from 'next-auth/providers/credentials'
 
 export const BASE_PATH = '/api/auth'
 
+interface ExtenduserOptions extends User {
+  role?: string
+}
+
 const authOptions: NextAuthConfig = {
+  session: {
+    strategy: 'jwt',
+  },
   providers: [
     Credentials({
       name: 'Credentials',
@@ -19,13 +26,14 @@ const authOptions: NextAuthConfig = {
           placeholder: 'password',
         },
       },
-      async authorize(credentials): Promise<User | null> {
+      async authorize(credentials): Promise<ExtenduserOptions | null> {
         const users = [
           {
             id: 'test-user-1',
             userName: 'nischalmdnvr',
-            password: 'HST8ht*qweasd',
+            password: 'nischal@123',
             email: 'nischalmudennavar@gmail.com',
+            role: 'admin',
           },
         ]
         const user = users.find(
@@ -39,6 +47,7 @@ const authOptions: NextAuthConfig = {
               id: user.id,
               name: user.userName,
               email: user.email,
+              role: user.role,
             }
           : null
       },

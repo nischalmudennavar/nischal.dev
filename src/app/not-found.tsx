@@ -3,7 +3,7 @@ import Link from 'next/link'
 import notfoundgif from '../assets/404.gif'
 
 export default function NotFound() {
-  return (
+  return ( 
     <main
       className={'flex h-screen flex-col items-center justify-center bg-black '}
     >
