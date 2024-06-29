@@ -76,12 +76,23 @@ const config = {
           '0%': { opacity: '1' },
           '100%': { opacity: '0' },
         },
+        'infinite-scroll': {
+          from: { transform: 'translateX(0%)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+        
+        marquee2: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.3s ease-out',
         'accordion-up': 'accordion-up 0.3s ease-out',
-        'marquee-text': 'marquee 10s linear infinite',
+        'marquee-text': 'marquee 30s linear infinite',
         'pulse-slow': 'pulseslow 0.2s linear infinite',
+        'marquee': 'marquee 30s linear infinite',
+        'marquee2': 'marquee2 30s linear infinite',
       },
     },
   },
