@@ -8,7 +8,7 @@ import DarkModeToggle from '@/components/DarkModeToggle'
 import { useSession } from 'next-auth/react'
 
 const HeroSection = () => {
-  const [elapsedTime, setElapsedTime] = useState('') 
+  const [elapsedTime, setElapsedTime] = useState('')
   const session = useSession()
 
   useEffect(() => {
@@ -64,6 +64,7 @@ const HeroSection = () => {
 
   return (
     <>
+     
       <div className=' relative -top-10 col-span-12   flex  h-fit select-none  flex-col items-center justify-center   p-2 text-center selection:select-none sm:w-full sm:flex-wrap  sm:text-center  xl:w-fit xl:flex-col xl:gap-0 xl:text-left '>
         <div className=' flex h-full w-fit flex-col justify-center p-2 sm:items-center  xl:items-center '>
           <p className='  text-xl  opacity-75' ref={ref2} />
@@ -90,7 +91,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <DarkModeToggle />
+
       <div className=' text-md absolute bottom-10 flex w-[80%] flex-col  gap-2  text-wrap text-center font-bold   duration-500 '>
         <span className='text-2xl text-yellow-400'>
           {' '}

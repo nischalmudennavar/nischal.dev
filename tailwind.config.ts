@@ -76,12 +76,18 @@ const config = {
           '0%': { opacity: '1' },
           '100%': { opacity: '0' },
         },
+        scrollLeft: {
+          to: {
+            left: '-90%',
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.3s ease-out',
         'accordion-up': 'accordion-up 0.3s ease-out',
         'marquee-text': 'marquee 10s linear infinite',
         'pulse-slow': 'pulseslow 0.2s linear infinite',
+        scrollLeft: 'scrollLeft 10s infinite linear',
       },
     },
   },

@@ -7,6 +7,7 @@ import { BASE_PATH, auth } from '@/auth'
 import './globals.css'
 
 import SessionProvider from '@/components/SessionProvider'
+import DarkModeToggle from '@/components/DarkModeToggle'
 
 const kode = Kode_Mono({ subsets: ['latin'] })
 
@@ -34,7 +35,6 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {/* <SpotifyWidget showWidget /> */}
             {children}
           </ThemeProvider>
         </SessionProvider>
