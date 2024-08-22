@@ -5,11 +5,9 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 import DarkModeToggle from '@/components/DarkModeToggle'
-import { useSession } from 'next-auth/react'
 
 const HeroSection = () => {
-  const [elapsedTime, setElapsedTime] = useState('') 
-  const session = useSession()
+  const [elapsedTime, setElapsedTime] = useState('')
 
   useEffect(() => {
     const startDate: Date = new Date('2024-05-04')

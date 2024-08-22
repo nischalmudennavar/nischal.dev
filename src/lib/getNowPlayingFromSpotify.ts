@@ -1,4 +1,4 @@
-import { getAccessToken } from './utils/generateSpotifyAccessToken'
+import { getAccessToken } from './generateSpotifyAccessToken'
 
 //Uses the access token to fetch the currently playing song
 
