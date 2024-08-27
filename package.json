@@ -20,7 +20,6 @@
     "eslint-config-prettier": "^9.1.0",
     "lucide-react": "^0.378.0",
     "next": "14.2.3",
-    "next-auth": "^5.0.0-beta.17",
     "next-themes": "^0.3.0",
     "prettier": "^3.2.5",
     "react": "^18",
@@ -32,18 +31,18 @@
   "devDependencies": {
     "@eslint/compat": "^1.0.3",
     "@eslint/js": "^9.4.0",
-    "@types/node": "^20",
+    "@types/node": "^22.5.0",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "9.x",
+    "eslint": "^8.57.0",
     "eslint-config-next": "14.2.3",
     "eslint-plugin-react": "^7.34.2",
     "globals": "^15.3.0",
     "postcss": "^8",
-    "prettier-plugin-tailwindcss": "^0.5.14",
+    "prettier-plugin-tailwindcss": "^0.6.6",
     "querystring": "^0.2.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5",
-    "typescript-eslint": "^7.12.0"
+    "typescript-eslint": "^8.3.0"
   }
 }
